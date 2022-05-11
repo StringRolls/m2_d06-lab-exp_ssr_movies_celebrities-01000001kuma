@@ -1,0 +1,28 @@
+<div>
+
+  <a href="/">Home</a> |
+
+  <form action="/celebrities/create" method="POST">
+
+    <label>
+      Name
+      <input type="name" name="name" placeholder="your name here" />
+    </label>
+
+    <label>Occupation
+      <input type="occupation" name="occupation" placeholder="Occupation" />
+    </label>
+
+     <label>catchPhrase
+      <input type="catchPhrase" name="catchPhrase" placeholder="Catch Phrase" />
+    </label>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+    {{#if errorMessage}}
+    <p>There was a problem: {{errorMessage}}</p>
+    {{/if}}
+
+</div>
